@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: azure;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 150px;
+    background: #0066cc;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+}
+
+.fixed-menu .profile-image {
+    margin-bottom: 20px;
+}
+
+.fixed-menu .profile-image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.fixed-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-menu ul li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.fixed-menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.fixed-menu ul li a:hover {
+    background-color: #004c99;
+}
+
+.page-container {
+    margin-left: 180px; /* Espaço para o menu fixo */
+    padding: 20px;
+    transition: opacity 0.5s ease; /* Transição de opacidade */
+    opacity: 1;
+}
+
+.page-container.fade-out {
+    opacity: 0; /* Efeito de esmaecimento ao sair */
+}
+
+.page-container.fade-in {
+    opacity: 1; /* Efeito de esmaecimento ao entrar */
+}
+
+.profile {
+    margin-top: 100px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+header p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.job, .project {
+    margin-bottom: 15px;
+}
+
+.job h3, .project h3 {
+    margin: 0;
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004c99;
+}
+
+.social-links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0066cc;
+}
